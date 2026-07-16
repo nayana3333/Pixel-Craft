@@ -18,6 +18,8 @@ An independent, frontend-focused redesign concept for the VertechX technical fes
 - Device-local festival planner with automatic schedule-conflict warnings
 - Downloadable `.ics` calendar itinerary for selected events
 - QR-coded registration preview pass with downloadable PNG output
+- Installable PWA with offline fallback and cached event imagery
+- Runtime hero asset reduced from 2.1 MB to approximately 217 KB
 - Optimized WebP event artwork with descriptive alternative text
 - Open Graph and X sharing metadata
 
@@ -36,6 +38,8 @@ The repository includes `firebase.json` for static hosting. Connect it to a Fire
 ## Important project note
 
 The checkout is a no-payment frontend preview. It saves a confirmation only on the current device and does not accept real registrations or payments. Official dates, prices, rules and branding should be verified before public release.
+
+See `PORTFOLIO.md` for the complete case-study narrative, interview walkthrough and resume bullet.
 
 ## Resume summary
 

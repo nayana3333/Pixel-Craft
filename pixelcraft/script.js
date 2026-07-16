@@ -179,3 +179,9 @@ function updateScrollUI(){
 window.addEventListener('scroll',updateScrollUI,{passive:true});updateScrollUI();
 const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target)}}),{threshold:.12});$$('.reveal').forEach(el=>revealObserver.observe(el));
 const navObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){$$('.desktop-nav a').forEach(link=>{const active=link.getAttribute('href')===`#${entry.target.id}`;link.classList.toggle('active',active);active?link.setAttribute('aria-current','location'):link.removeAttribute('aria-current')})}}),{rootMargin:'-30% 0px -60%'});$$('main section[id]').forEach(section=>navObserver.observe(section));
+
+let installPrompt;
+window.addEventListener('beforeinstallprompt',event=>{event.preventDefault();installPrompt=event;$('#install-app').hidden=false});
+$('#install-app').addEventListener('click',async()=>{if(!installPrompt)return;installPrompt.prompt();await installPrompt.userChoice;installPrompt=null;$('#install-app').hidden=true});
+window.addEventListener('appinstalled',()=>{$('#install-app').hidden=true;toast('VertechX installed')});
+if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));

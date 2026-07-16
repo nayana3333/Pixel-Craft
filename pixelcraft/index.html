@@ -14,8 +14,10 @@
   <meta name="twitter:description" content="Build beyond the obvious at VertechX, MVJCE.">
   <meta name="twitter:image" content="images/hero-vertechx.png">
   <title>VertechX // NEXT — MVJCE Technical Fest</title>
-  <link rel="preload" href="images/hero-vertechx.png" as="image">
-  <link rel="stylesheet" href="style.css?v=20260716b">
+  <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
+  <meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="preload" href="images/hero-optimized.jpg" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="style.css?v=20260716c">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -36,6 +38,7 @@
       <a href="#faq">FAQ</a>
     </nav>
     <div class="header-actions">
+      <button class="install-button" id="install-app" type="button" hidden>Install app <span>↓</span></button>
       <button class="plan-button" id="plan-button" type="button" aria-label="Open my festival plan">My plan <b id="plan-count">0</b></button>
       <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch color theme">◐</button>
       <button class="button button-small open-registration" type="button">Register <span>↗</span></button>
@@ -213,7 +216,6 @@
   </div>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="script.js?v=20260716b"></script>
+  <script src="vendor/qrcode.min.js"></script><script src="script.js?v=20260716c"></script>
 </body>
 </html>
