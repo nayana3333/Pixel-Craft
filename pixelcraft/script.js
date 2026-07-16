@@ -78,7 +78,7 @@ function syncStep(){
   $$('.form-step').forEach(el=>el.classList.toggle('active',Number(el.dataset.formStep)===state.step));
   $$('[data-step-dot]').forEach(el=>el.classList.toggle('active',Number(el.dataset.stepDot)<=state.step));
   $('#back-step').hidden=state.step===1;$('#form-hint').textContent=`Step ${state.step} of 3`;
-  $('#next-step').innerHTML=state.step===3?`Simulate payment <span>→</span>`:`Continue <span>→</span>`;
+  $('#next-step').innerHTML=state.step===3?`Confirm preview <span>→</span>`:`Continue <span>→</span>`;
   if(state.step===3)renderReview();
 }
 function validateProfile(){
@@ -136,6 +136,11 @@ document.addEventListener('keydown',event=>{
   if(event.key==='/'&&!['INPUT','TEXTAREA'].includes(document.activeElement.tagName)){event.preventDefault();$('#event-search').focus()}
 });
 
-window.addEventListener('scroll',()=>$('.site-header').classList.toggle('scrolled',scrollY>20),{passive:true});
+function updateScrollUI(){
+  $('.site-header').classList.toggle('scrolled',scrollY>20);
+  const distance=document.documentElement.scrollHeight-innerHeight;
+  $('#page-progress').style.width=`${distance>0?Math.min(100,(scrollY/distance)*100):0}%`;
+}
+window.addEventListener('scroll',updateScrollUI,{passive:true});updateScrollUI();
 const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target)}}),{threshold:.12});$$('.reveal').forEach(el=>revealObserver.observe(el));
-const navObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){$$('.desktop-nav a').forEach(link=>link.classList.toggle('active',link.getAttribute('href')===`#${entry.target.id}`))}}),{rootMargin:'-30% 0px -60%'});$$('main section[id]').forEach(section=>navObserver.observe(section));
+const navObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){$$('.desktop-nav a').forEach(link=>{const active=link.getAttribute('href')===`#${entry.target.id}`;link.classList.toggle('active',active);active?link.setAttribute('aria-current','location'):link.removeAttribute('aria-current')})}}),{rootMargin:'-30% 0px -60%'});$$('main section[id]').forEach(section=>navObserver.observe(section));
