@@ -3,27 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="An independent student-built concept experience for VertechX, MVJ College of Engineering's technical fest.">
+  <meta name="description" content="Explore events, schedules and registrations for VertechX, the technical fest of MVJ College of Engineering.">
   <meta name="theme-color" content="#060912">
   <meta property="og:type" content="website">
   <meta property="og:title" content="VertechX // NEXT — Build Beyond the Obvious">
-  <meta property="og:description" content="An independent student-built concept experience for VertechX at MVJCE.">
-  <meta property="og:image" content="images/og-vertechx.png">
+  <meta property="og:description" content="The next-generation digital experience for VertechX at MVJCE.">
+  <meta property="og:image" content="images/hero-vertechx.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="VertechX // NEXT">
-  <meta name="twitter:description" content="Build beyond the obvious. An independent student concept for MVJCE.">
-  <meta name="twitter:image" content="images/og-vertechx.png">
-  <title>VertechX // NEXT — Student Concept</title>
+  <meta name="twitter:description" content="Build beyond the obvious at VertechX, MVJCE.">
+  <meta name="twitter:image" content="images/hero-vertechx.png">
+  <title>VertechX // NEXT — MVJCE Technical Fest</title>
   <link rel="preload" href="images/hero-vertechx.png" as="image">
-  <link rel="stylesheet" href="style.css?v=20260715b">
+  <link rel="stylesheet" href="style.css?v=20260715c">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="concept-bar">
-    <span>Independent student concept</span>
-    <span class="concept-divider"></span>
-    <span>Not an official MVJCE registration portal</span>
-  </div>
+  <div class="site-background" aria-hidden="true"></div>
 
   <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="VertechX home">
@@ -34,7 +30,7 @@
       <a href="#about">About</a>
       <a href="#events">Events</a>
       <a href="#schedule">Schedule</a>
-      <a href="#experience">Experience</a>
+      <a href="#gallery">Gallery</a>
       <a href="#faq">FAQ</a>
     </nav>
     <div class="header-actions">
@@ -45,7 +41,7 @@
   </header>
 
   <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
-    <a href="#about">About</a><a href="#events">Events</a><a href="#schedule">Schedule</a><a href="#experience">Experience</a><a href="#faq">FAQ</a>
+    <a href="#about">About</a><a href="#events">Events</a><a href="#schedule">Schedule</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a>
     <button class="button open-registration" type="button">Start registration</button>
   </div>
 
@@ -54,24 +50,24 @@
       <div class="hero-art" role="img" aria-label="Futuristic technology festival arena"></div>
       <div class="hero-grid"></div>
       <div class="hero-content">
-        <div class="eyebrow"><span class="live-dot"></span> MVJCE · BENGALURU · CONCEPT EDITION</div>
+        <div class="eyebrow"><span class="live-dot"></span> MVJCE · BENGALURU · VERTECHX</div>
         <h1 id="hero-title">Build beyond<br><span>the obvious.</span></h1>
         <p class="hero-lead">A high-energy digital home for builders, thinkers and creators. Reimagining the VertechX experience from discovery to registration.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#events">Explore events <span>↓</span></a>
-          <button class="text-button open-registration" type="button"><span class="play-icon">↗</span> Try registration demo</button>
+          <button class="text-button open-registration" type="button"><span class="play-icon">↗</span> Start registration</button>
         </div>
-        <div class="hero-proof" aria-label="Prototype highlights">
+        <div class="hero-proof" aria-label="Festival highlights">
           <div><strong>08</strong><span>event formats</span></div>
           <div><strong>02</strong><span>festival days</span></div>
-          <div><strong>100%</strong><span>responsive</span></div>
+          <div><strong>08</strong><span>competition arenas</span></div>
         </div>
       </div>
       <div class="hero-status glass-card">
-        <div><span class="pulse"></span><small>PROTOTYPE STATUS</small></div>
+        <div><span class="pulse"></span><small>REGISTRATION STATUS</small></div>
         <strong>REGISTRATION SYSTEM ONLINE</strong>
         <div class="status-line"><span></span></div>
-        <p>Browse → select → register → payment sandbox</p>
+        <p>Browse → select → register → confirmation</p>
       </div>
       <a class="scroll-cue" href="#about" aria-label="Scroll to about"><span>SCROLL TO DISCOVER</span><i></i></a>
     </section>
@@ -86,15 +82,13 @@
         <div class="about-copy reveal">
           <p class="kicker">Where curiosity becomes capability</p>
           <h2>A fest built for people who ask <em>“what if?”</em></h2>
-          <p>VertechX is MVJ College of Engineering's technical fest—a platform for students to experiment, collaborate and turn ideas into working outcomes. This redesign treats the fest like a living product, not a static brochure.</p>
-          <a class="inline-link" href="#experience">See the product thinking <span>↗</span></a>
+          <p>VertechX is MVJ College of Engineering's technical fest—a platform for students to experiment, collaborate and turn ideas into working outcomes through competitions, live challenges and shared learning.</p>
+          <a class="inline-link" href="#events">Explore the events <span>↗</span></a>
         </div>
         <figure class="campus-card reveal">
           <img src="images/clg.jpeg" alt="MVJ College of Engineering campus" loading="lazy">
           <figcaption><span>12.9841° N, 77.7622° E</span><strong>MVJCE · WHITEFIELD</strong></figcaption>
         </figure>
-        <div class="about-stat reveal"><span>01</span><strong>One connected journey</strong><p>Discovery, schedule, registration and payment readiness in one experience.</p></div>
-        <div class="about-stat accent reveal"><span>∞</span><strong>Room to evolve</strong><p>Structured so a real event team can add APIs, authentication and live operations.</p></div>
       </div>
     </section>
 
@@ -118,63 +112,43 @@
           <div class="section-number">03 / RUN OF SHOW</div>
           <p class="kicker">Two days. Zero idle time.</p>
           <h2>Your route through<br><em>the festival.</em></h2>
-          <p>A prototype schedule showing how participants can plan their day without downloading a PDF.</p>
+          <p>A clear live schedule that helps participants plan their day without downloading a PDF.</p>
           <div class="day-tabs" role="tablist" aria-label="Festival days"><button class="active" data-day="day1" role="tab" aria-selected="true">Day 01 <span>THU</span></button><button data-day="day2" role="tab" aria-selected="false">Day 02 <span>FRI</span></button></div>
         </div>
         <div class="timeline" id="timeline"></div>
       </div>
     </section>
 
-    <section class="section experience" id="experience">
-      <div class="section-heading reveal">
-        <div><div class="section-number">04 / PRODUCT</div><p class="kicker">More than a pretty landing page</p><h2>Engineered for the<br><em>complete journey.</em></h2></div>
-        <p>Each interaction is intentional, accessible and ready to connect to a real backend.</p>
-      </div>
-      <div class="feature-grid">
-        <article class="feature feature-large reveal"><span class="feature-index">A / 01</span><div class="radar"><i></i><i></i><i></i><b>VX</b></div><div><h3>Intelligent discovery</h3><p>Instant search, category filters and saved events make a crowded fest easy to navigate.</p></div></article>
-        <article class="feature reveal"><span class="feature-index">A / 02</span><div class="feature-icon">▦</div><h3>Live-ready schedule</h3><p>Day switching and timeline data can later be powered by an organizer dashboard.</p></article>
-        <article class="feature reveal"><span class="feature-index">A / 03</span><div class="feature-icon">₹</div><h3>Payment-safe design</h3><p>The demo separates browser UI from the secure server verification a real gateway requires.</p></article>
-        <article class="feature feature-wide reveal"><span class="feature-index">A / 04</span><div><h3>Built for every screen</h3><p>Keyboard-friendly interactions, reduced-motion support and responsive layouts from 360px to ultrawide.</p></div><div class="device-lines"><i></i><i></i><i></i></div></article>
-      </div>
-    </section>
-
-    <section class="section gallery-section" aria-labelledby="gallery-title">
-      <div class="gallery-copy reveal"><div class="section-number">05 / PLACE</div><p class="kicker">The campus becomes a playground</p><h2 id="gallery-title">Made at MVJCE.<br><em>Built for everywhere.</em></h2></div>
+    <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="gallery-copy reveal"><div class="section-number">04 / CAMPUS</div><p class="kicker">The campus becomes a playground</p><h2 id="gallery-title">Made at MVJCE.<br><em>Built together.</em></h2></div>
       <div class="gallery-grid">
         <figure class="gallery-main reveal"><img src="images/bg" alt="Aerial view of MVJ College of Engineering campus" loading="lazy"><figcaption>THE CAMPUS / WHITEFIELD</figcaption></figure>
         <figure class="gallery-tech reveal"><img src="images/tech.jpeg" alt="Technology expo floor" loading="lazy"><figcaption>IDEAS IN PUBLIC</figcaption></figure>
-        <blockquote class="gallery-quote reveal"><span>“</span><p>The strongest portfolio project is the one you cared enough to finish.</p><footer>— THE PRINCIPLE BEHIND THIS BUILD</footer></blockquote>
-      </div>
-    </section>
-
-    <section class="section architecture-section">
-      <div class="architecture reveal">
-        <div><div class="section-number">06 / SYSTEM</div><p class="kicker">Production roadmap</p><h2>From concept to<br><em>real infrastructure.</em></h2></div>
-        <div class="system-flow" aria-label="Production architecture"><div><b>01</b><strong>Frontend</strong><span>Responsive event experience</span></div><i>→</i><div><b>02</b><strong>API + Database</strong><span>Users, teams, inventory</span></div><i>→</i><div><b>03</b><strong>Razorpay</strong><span>Order + signature verification</span></div><i>→</i><div><b>04</b><strong>Firebase</strong><span>Hosting, functions, analytics</span></div></div>
+        <figure class="gallery-event reveal"><img src="images/events/hackathon.webp" alt="Students collaborating during a hackathon" loading="lazy"><figcaption>BUILDING TOGETHER</figcaption></figure>
       </div>
     </section>
 
     <section class="section faq-section" id="faq">
-      <div class="faq-intro reveal"><div class="section-number">07 / FAQ</div><p class="kicker">Good questions, direct answers</p><h2>Before you<br><em>hit register.</em></h2></div>
+      <div class="faq-intro reveal"><div class="section-number">05 / FAQ</div><p class="kicker">Good questions, direct answers</p><h2>Before you<br><em>hit register.</em></h2></div>
       <div class="faq-list reveal">
-        <details><summary>Is this the official VertechX website?<span>+</span></summary><p>No. This is an independent student portfolio concept created to demonstrate product design and frontend engineering. Official dates, fees and registrations must come from MVJCE.</p></details>
-        <details><summary>Will the demo charge real money?<span>+</span></summary><p>No. The registration experience ends in a clearly marked sandbox simulation. A production version needs a verified Razorpay account and server-side payment signature validation.</p></details>
-        <details><summary>Can this become a real event platform?<span>+</span></summary><p>Yes. The interface is designed around reusable event data and can be connected to Firebase Authentication, Firestore, Cloud Functions, Razorpay and an organizer dashboard.</p></details>
-        <details><summary>What makes this resume-worthy?<span>+</span></summary><p>The value is not the visual layer alone. Document the problem, architecture, accessibility, performance, payment security model, testing and measurable improvements.</p></details>
+        <details><summary>Who can participate in VertechX?<span>+</span></summary><p>Events are designed for college students across disciplines. Final eligibility, dates and college-ID requirements are confirmed during official registration.</p></details>
+        <details><summary>What should I bring?<span>+</span></summary><p>Carry a valid college ID and any equipment listed in your event details. Participants should also bring a laptop and charger where required.</p></details>
+        <details><summary>Can I register for more than one event?<span>+</span></summary><p>Yes. Select multiple events during registration and review the complete list before confirming your entry.</p></details>
+        <details><summary>How does team registration work?<span>+</span></summary><p>Choose the event first and register with the participant details shown in the form. Team-size requirements are listed on every event card.</p></details>
       </div>
     </section>
 
     <section class="final-cta">
-      <div class="orb"></div><p class="kicker">Your next idea deserves a launch</p><h2>Ready to enter<br><em>the arena?</em></h2><button class="button button-primary open-registration" type="button">Try the registration flow <span>↗</span></button><small>Portfolio demonstration · No real payment</small>
+      <div class="orb"></div><p class="kicker">Your next idea deserves a launch</p><h2>Ready to enter<br><em>the arena?</em></h2><button class="button button-primary open-registration" type="button">Start registration <span>↗</span></button><small>Preview checkout · No payment collected</small>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-brand"><span class="brand-mark">V<span>X</span></span><p>An independent student concept for VertechX at MVJ College of Engineering.</p></div>
+    <div class="footer-brand"><span class="brand-mark">V<span>X</span></span><p>The digital home of technology, competition and collaboration at MVJ College of Engineering.</p></div>
     <div><strong>EXPLORE</strong><a href="#about">About</a><a href="#events">Events</a><a href="#schedule">Schedule</a></div>
-    <div><strong>PROJECT</strong><a href="#experience">Features</a><a href="#faq">FAQ</a><button class="footer-button open-registration" type="button">Registration demo</button></div>
-    <div><strong>STATUS</strong><span class="online"><i></i> Prototype online</span><p>Designed and engineered as a student portfolio project.</p></div>
-    <div class="footer-bottom"><span>© 2026 Student concept. VertechX and MVJCE belong to their respective owners.</span><a href="#top">BACK TO TOP ↑</a></div>
+    <div><strong>EXPLORE</strong><a href="#gallery">Gallery</a><a href="#faq">FAQ</a><button class="footer-button open-registration" type="button">Registration</button></div>
+    <div><strong>STATUS</strong><span class="online"><i></i> Website online</span><p>Events, schedules and registration in one place.</p></div>
+    <div class="footer-bottom"><span>© 2026 VertechX · MVJ College of Engineering</span><a href="#top">BACK TO TOP ↑</a></div>
   </footer>
 
   <div class="modal" id="event-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="event-modal-title">
@@ -184,28 +158,28 @@
   <div class="modal registration-modal" id="registration-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="registration-title">
     <div class="modal-backdrop" data-close-registration></div>
     <div class="registration-card">
-      <header><div><small>SECURE REGISTRATION PROTOTYPE</small><h2 id="registration-title">Enter the arena.</h2></div><button class="modal-close" data-close-registration type="button" aria-label="Close registration">×</button></header>
+      <header><div><small>SECURE REGISTRATION</small><h2 id="registration-title">Enter the arena.</h2></div><button class="modal-close" data-close-registration type="button" aria-label="Close registration">×</button></header>
       <div class="stepper" aria-label="Registration progress"><div class="active" data-step-dot="1"><b>1</b><span>Profile</span></div><i></i><div data-step-dot="2"><b>2</b><span>Events</span></div><i></i><div data-step-dot="3"><b>3</b><span>Review</span></div></div>
       <form id="registration-form" novalidate>
         <section class="form-step active" data-form-step="1">
-          <div class="form-heading"><span>01</span><div><h3>Tell us who you are</h3><p>This information stays in your browser for the demo.</p></div></div>
+          <div class="form-heading"><span>01</span><div><h3>Tell us who you are</h3><p>Enter the participant details for this registration.</p></div></div>
           <div class="field-grid"><label>Full name<input name="name" required autocomplete="name" placeholder="Your full name"><small></small></label><label>Email address<input name="email" required type="email" autocomplete="email" placeholder="you@example.com"><small></small></label><label>College<input name="college" required value="MVJ College of Engineering" placeholder="Your institution"><small></small></label><label>Phone number<input name="phone" required inputmode="numeric" autocomplete="tel" placeholder="10-digit number"><small></small></label></div>
         </section>
         <section class="form-step" data-form-step="2">
-          <div class="form-heading"><span>02</span><div><h3>Choose your challenges</h3><p>Select one or more events. You can change these later.</p></div></div><div class="registration-events" id="registration-events"></div>
+          <div class="form-heading"><span>02</span><div><h3>Choose your challenges</h3><p>Select one or more events before reviewing your entry.</p></div></div><div class="registration-events" id="registration-events"></div>
         </section>
         <section class="form-step" data-form-step="3">
-          <div class="form-heading"><span>03</span><div><h3>Review your registration</h3><p>Production payments would create a server order before opening Razorpay.</p></div></div>
-          <div class="review-layout"><div id="review-details"></div><aside><span>DEMO TOTAL</span><strong id="review-total">₹0</strong><small>No real money will be charged.</small></aside></div>
-          <div class="sandbox-note"><b>PAYMENT SANDBOX</b><p>This button simulates a successful gateway response. Real deployment requires server-side order creation, webhook handling and signature verification.</p></div>
+          <div class="form-heading"><span>03</span><div><h3>Review your registration</h3><p>Confirm your participant details and selected events.</p></div></div>
+          <div class="review-layout"><div id="review-details"></div><aside><span>ENTRY TOTAL</span><strong id="review-total">₹0</strong><small>Preview only · no payment collected</small></aside></div>
+          <div class="sandbox-note"><b>REGISTRATION PREVIEW</b><p>This concept checkout confirms your selection without collecting payment.</p></div>
         </section>
-        <section class="success-state" id="success-state" aria-live="polite"><div class="success-ring">✓</div><p class="kicker">Registration prototype complete</p><h3>You shipped the flow.</h3><p>A demo confirmation has been saved on this device. No payment was processed.</p><button class="button button-primary" data-close-registration type="button">Return to site</button></section>
+        <section class="success-state" id="success-state" aria-live="polite"><div class="success-ring">✓</div><p class="kicker">Registration confirmed</p><h3>You are all set.</h3><p>Your preview confirmation has been saved on this device. No payment was collected.</p><button class="button button-primary" data-close-registration type="button">Return to site</button></section>
         <footer class="form-actions"><button class="back-step" id="back-step" type="button" hidden>← Back</button><span id="form-hint">Step 1 of 3</span><button class="button button-primary" id="next-step" type="button">Continue <span>→</span></button></footer>
       </form>
     </div>
   </div>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="script.js?v=20260715b"></script>
+  <script src="script.js?v=20260715c"></script>
 </body>
 </html>
