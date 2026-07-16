@@ -111,15 +111,5 @@ Before using the project for a real festival, replace the concept content with v
 
 This repository demonstrates a production-minded frontend, not a production registration system. Registration confirmations currently stay on the visitor's device. There is no database, authentication, organizer dashboard or payment gateway. That boundary is intentional: the interface can be explored safely without pretending that browser-only code is sufficient for sensitive transactions.
 
-For the design rationale, implementation walkthrough and interview talking points, read the [frontend case study](./PORTFOLIO.md).
 
-## Author
 
-Designed and developed by **Nayana**.
-
-- GitHub: [@nayana3333](https://github.com/nayana3333)
-- Repository: [nayana3333/Pixel-Craft](https://github.com/nayana3333/Pixel-Craft)
-
-## Third-party notice
-
-QR generation uses [QRCode.js](https://github.com/davidshimjs/qrcodejs) by davidshimjs under the MIT License. Its license is included at `pixelcraft/vendor/QRCode.js.LICENSE`.
