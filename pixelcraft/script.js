@@ -1,12 +1,12 @@
 const events = [
-  {id:'hackathon',image:'images/events/hackathon.webp',imageAlt:'Students collaborating during a university hackathon',code:'VX-01',title:'48H Hack Protocol',category:'Coding',price:799,team:'2–4 members',duration:'48 hours',venue:'Innovation Lab',gradient:'linear-gradient(135deg,#162c72,#6757e8)',skills:['Full-stack','AI','Product'],summary:'Build and pitch a working solution to a real problem under a relentless clock.',description:'Teams move from problem discovery to a tested prototype and live pitch. Mentors support product thinking, engineering decisions and storytelling.',takeaways:['Problem statements revealed at kickoff','Three mentor checkpoints','Prototype, repository and pitch deck required','Judged on impact, execution and clarity']},
-  {id:'robotics',image:'images/events/robotics.webp',imageAlt:'An autonomous robot competing on an obstacle arena',code:'VX-02',title:'Autonomous Arena',category:'Robotics',price:599,team:'2–4 members',duration:'4 hours',venue:'Quadrangle',gradient:'linear-gradient(135deg,#073c55,#18a5a1)',skills:['Sensors','Control','Hardware'],summary:'Engineer a machine that can read the arena, decide fast and move with precision.',description:'Design an autonomous robot for a staged navigation challenge combining line tracking, obstacles and object placement.',takeaways:['Bring your own assembled robot','Arena dimensions shared before the event','Multiple timed qualification rounds','Safety inspection is mandatory']},
-  {id:'ideathon',image:'images/events/ideathon.webp',imageAlt:'A student presenting an innovation idea to judges',code:'VX-03',title:'Zero-to-One Ideathon',category:'Innovation',price:299,team:'1–3 members',duration:'6 hours',venue:'Seminar Hall',gradient:'linear-gradient(135deg,#63300e,#ff825b)',skills:['Strategy','Pitching','Research'],summary:'Find the sharpest problem in the room and turn it into a credible venture story.',description:'A rapid innovation sprint for teams who can connect user pain, technology feasibility and a viable path to impact.',takeaways:['Themes span climate, health and access','Five-minute pitch plus Q&A','Evidence matters more than slide polish','Top concepts receive mentor feedback']},
-  {id:'cyber',image:'images/events/cyber.webp',imageAlt:'Students competing in an ethical cybersecurity challenge',code:'VX-04',title:'Cipher Siege',category:'Cyber',price:399,team:'1–2 members',duration:'5 hours',venue:'Network Lab',gradient:'linear-gradient(135deg,#14271f,#32a66b)',skills:['Web','Crypto','Forensics'],summary:'Trace the breach, break the cipher and capture every flag before the network closes.',description:'A beginner-friendly capture-the-flag competition covering web exploitation, cryptography, OSINT and digital forensics.',takeaways:['Isolated legal practice environment','Difficulty rises across five zones','Hints trade against final points','Bring a laptop with Linux support']},
-  {id:'design',image:'images/events/design.webp',imageAlt:'Design students creating user interface prototypes',code:'VX-05',title:'Pixel Craft X',category:'Design',price:249,team:'1–2 members',duration:'4 hours',venue:'Design Studio',gradient:'linear-gradient(135deg,#5a174d,#d34d98)',skills:['UI/UX','Systems','Story'],summary:'Turn an ordinary brief into a digital experience people remember and want to use.',description:'A product-design challenge focused on user journeys, interface systems and the quality of the final story—not just the hero screen.',takeaways:['Brief and brand kit revealed onsite','Wireframes and high-fidelity screens','Accessibility is part of judging','Clickable prototype recommended']},
-  {id:'gaming',image:'images/events/gaming.webp',imageAlt:'Students competing in a university esports tournament',code:'VX-06',title:'Neon Circuit',category:'Gaming',price:499,team:'1–5 members',duration:'League format',venue:'Gaming Arena',gradient:'linear-gradient(135deg,#341168,#7050ff)',skills:['Valorant','EA FC','Strategy'],summary:'Enter a tournament experience built for clean competition, sharp calls and clutch plays.',description:'A multi-title competitive gaming arena with structured brackets, referee oversight and dedicated warm-up slots.',takeaways:['Separate rules for every title','Valid student ID required','Anti-cheat checks before play','Fixtures published after check-in']},
-  {id:'drone',image:'images/events/drone.webp',imageAlt:'A racing drone flying through a competition gate',code:'VX-07',title:'Drone Vector',category:'Robotics',price:699,team:'2–3 members',duration:'3 hours',venue:'Open Grounds',gradient:'linear-gradient(135deg,#17465a,#42bce4)',skills:['Piloting','Build','Precision'],summary:'Navigate a precision flight course where every gate, turn and second counts.',description:'Pilots compete across technical flight stages that test control, speed, spatial awareness and safe recovery.',takeaways:['Practice slot before qualification','Prop guards are compulsory','Battery safety rules apply','Fastest clean run wins']},
-  {id:'data',image:'images/events/data.webp',imageAlt:'Students analyzing data science visualizations',code:'VX-08',title:'Data After Dark',category:'Coding',price:349,team:'1–3 members',duration:'8 hours',venue:'AI Lab',gradient:'linear-gradient(135deg,#203267,#2c9dd8)',skills:['Python','ML','Insights'],summary:'Clean a chaotic dataset, find the signal and make a model decision-makers can trust.',description:'A practical data challenge where analysis quality, explainability and business interpretation matter as much as leaderboard score.',takeaways:['Dataset released at kickoff','External pretrained models limited','Notebook and summary dashboard required','Judged on rigor and explainability']}
+  {id:'hackathon',image:'images/events/hackathon.webp',imageAlt:'Students collaborating during a university hackathon',code:'VX-01',title:'48H Hack Protocol',category:'Coding',price:799,team:'2–4 members',duration:'48 hours',venue:'Innovation Lab',slot:'Day 01 · 11:00',start:'20261015T110000',end:'20261017T110000',gradient:'linear-gradient(135deg,#162c72,#6757e8)',skills:['Full-stack','AI','Product'],summary:'Build and pitch a working solution to a real problem under a relentless clock.',description:'Teams move from problem discovery to a tested prototype and live pitch. Mentors support product thinking, engineering decisions and storytelling.',takeaways:['Problem statements revealed at kickoff','Three mentor checkpoints','Prototype, repository and pitch deck required','Judged on impact, execution and clarity']},
+  {id:'robotics',image:'images/events/robotics.webp',imageAlt:'An autonomous robot competing on an obstacle arena',code:'VX-02',title:'Autonomous Arena',category:'Robotics',price:599,team:'2–4 members',duration:'4 hours',venue:'Quadrangle',slot:'Day 01 · 14:00',start:'20261015T140000',end:'20261015T180000',gradient:'linear-gradient(135deg,#073c55,#18a5a1)',skills:['Sensors','Control','Hardware'],summary:'Engineer a machine that can read the arena, decide fast and move with precision.',description:'Design an autonomous robot for a staged navigation challenge combining line tracking, obstacles and object placement.',takeaways:['Bring your own assembled robot','Arena dimensions shared before the event','Multiple timed qualification rounds','Safety inspection is mandatory']},
+  {id:'ideathon',image:'images/events/ideathon.webp',imageAlt:'A student presenting an innovation idea to judges',code:'VX-03',title:'Zero-to-One Ideathon',category:'Innovation',price:299,team:'1–3 members',duration:'6 hours',venue:'Seminar Hall',slot:'Day 02 · 13:00',start:'20261016T130000',end:'20261016T190000',gradient:'linear-gradient(135deg,#63300e,#ff825b)',skills:['Strategy','Pitching','Research'],summary:'Find the sharpest problem in the room and turn it into a credible venture story.',description:'A rapid innovation sprint for teams who can connect user pain, technology feasibility and a viable path to impact.',takeaways:['Themes span climate, health and access','Five-minute pitch plus Q&A','Evidence matters more than slide polish','Top concepts receive mentor feedback']},
+  {id:'cyber',image:'images/events/cyber.webp',imageAlt:'Students competing in an ethical cybersecurity challenge',code:'VX-04',title:'Cipher Siege',category:'Cyber',price:399,team:'1–2 members',duration:'5 hours',venue:'Network Lab',slot:'Day 02 · 10:30',start:'20261016T103000',end:'20261016T153000',gradient:'linear-gradient(135deg,#14271f,#32a66b)',skills:['Web','Crypto','Forensics'],summary:'Trace the breach, break the cipher and capture every flag before the network closes.',description:'A beginner-friendly capture-the-flag competition covering web exploitation, cryptography, OSINT and digital forensics.',takeaways:['Isolated legal practice environment','Difficulty rises across five zones','Hints trade against final points','Bring a laptop with Linux support']},
+  {id:'design',image:'images/events/design.webp',imageAlt:'Design students creating user interface prototypes',code:'VX-05',title:'Pixel Craft X',category:'Design',price:249,team:'1–2 members',duration:'4 hours',venue:'Design Studio',slot:'Day 01 · 11:00',start:'20261015T110000',end:'20261015T150000',gradient:'linear-gradient(135deg,#5a174d,#d34d98)',skills:['UI/UX','Systems','Story'],summary:'Turn an ordinary brief into a digital experience people remember and want to use.',description:'A product-design challenge focused on user journeys, interface systems and the quality of the final story—not just the hero screen.',takeaways:['Brief and brand kit revealed onsite','Wireframes and high-fidelity screens','Accessibility is part of judging','Clickable prototype recommended']},
+  {id:'gaming',image:'images/events/gaming.webp',imageAlt:'Students competing in a university esports tournament',code:'VX-06',title:'Neon Circuit',category:'Gaming',price:499,team:'1–5 members',duration:'League format',venue:'Gaming Arena',slot:'Day 02 · 10:00',start:'20261016T100000',end:'20261016T170000',gradient:'linear-gradient(135deg,#341168,#7050ff)',skills:['Valorant','EA FC','Strategy'],summary:'Enter a tournament experience built for clean competition, sharp calls and clutch plays.',description:'A multi-title competitive gaming arena with structured brackets, referee oversight and dedicated warm-up slots.',takeaways:['Separate rules for every title','Valid student ID required','Anti-cheat checks before play','Fixtures published after check-in']},
+  {id:'drone',image:'images/events/drone.webp',imageAlt:'A racing drone flying through a competition gate',code:'VX-07',title:'Drone Vector',category:'Robotics',price:699,team:'2–3 members',duration:'3 hours',venue:'Open Grounds',slot:'Day 02 · 09:00',start:'20261016T090000',end:'20261016T120000',gradient:'linear-gradient(135deg,#17465a,#42bce4)',skills:['Piloting','Build','Precision'],summary:'Navigate a precision flight course where every gate, turn and second counts.',description:'Pilots compete across technical flight stages that test control, speed, spatial awareness and safe recovery.',takeaways:['Practice slot before qualification','Prop guards are compulsory','Battery safety rules apply','Fastest clean run wins']},
+  {id:'data',image:'images/events/data.webp',imageAlt:'Students analyzing data science visualizations',code:'VX-08',title:'Data After Dark',category:'Coding',price:349,team:'1–3 members',duration:'8 hours',venue:'AI Lab',slot:'Day 02 · 09:30',start:'20261016T093000',end:'20261016T173000',gradient:'linear-gradient(135deg,#203267,#2c9dd8)',skills:['Python','ML','Insights'],summary:'Clean a chaotic dataset, find the signal and make a model decision-makers can trust.',description:'A practical data challenge where analysis quality, explainability and business interpretation matter as much as leaderboard score.',takeaways:['Dataset released at kickoff','External pretrained models limited','Notebook and summary dashboard required','Judged on rigor and explainability']}
 ];
 
 const schedules = {
@@ -26,7 +26,7 @@ const schedules = {
   ]
 };
 
-const state = {filter:'All',query:'',saved:new Set(JSON.parse(localStorage.getItem('vx-saved') || '[]')),showSaved:false,step:1,selected:new Set()};
+const state = {filter:'All',query:'',saved:new Set(JSON.parse(localStorage.getItem('vx-saved') || '[]')),plan:new Set(JSON.parse(localStorage.getItem('vx-plan') || '[]')),showSaved:false,step:1,selected:new Set()};
 const $ = (selector,scope=document) => scope.querySelector(selector);
 const $$ = (selector,scope=document) => [...scope.querySelectorAll(selector)];
 
@@ -43,7 +43,7 @@ function eventCard(event){
   const saved=state.saved.has(event.id);
   return `<article class="event-card" data-event-id="${event.id}" style="--event-gradient:${event.gradient}">
     <div class="event-visual"><img src="${event.image}" alt="${event.imageAlt}" loading="lazy"><span class="event-code">${event.code} / ${event.category.toUpperCase()}</span><button class="save-event ${saved?'saved':''}" type="button" data-save="${event.id}" aria-label="${saved?'Remove':'Save'} ${event.title}">${saved?'◆':'◇'}</button></div>
-    <div class="event-body"><div class="event-meta"><span>${event.team}</span><span>${event.duration}</span></div><h3>${event.title}</h3><p>${event.summary}</p><div class="event-skills">${event.skills.map(skill=>`<span>${skill}</span>`).join('')}</div><div class="event-footer"><strong>${money(event.price)}</strong><button type="button" data-details="${event.id}">View mission →</button></div></div>
+    <div class="event-body"><div class="event-meta"><span>${event.team}</span><span>${event.slot}</span></div><h3>${event.title}</h3><p>${event.summary}</p><div class="event-skills">${event.skills.map(skill=>`<span>${skill}</span>`).join('')}</div><button class="plan-event ${state.plan.has(event.id)?'planned':''}" type="button" data-plan="${event.id}">${state.plan.has(event.id)?'✓ In my plan':'+ Add to my plan'}</button><div class="event-footer"><strong>${money(event.price)}</strong><div><button type="button" data-details="${event.id}">Quick view</button><a href="event.html?event=${event.id}">Full page ↗</a></div></div></div>
   </article>`;
 }
 
@@ -54,6 +54,7 @@ function renderEvents(){
   $$('[data-details]',$('#event-grid')).forEach(button=>button.addEventListener('click',()=>openEvent(button.dataset.details)));
   $('#empty-state').hidden=filtered.length>0;
   $('#saved-count').textContent=state.saved.size;
+  $('#plan-count').textContent=state.plan.size;
   $('#saved-button').classList.toggle('active',state.showSaved);
 }
 
@@ -61,6 +62,30 @@ function toggleSave(id){
   if(state.saved.has(id)){state.saved.delete(id);toast('Removed from saved events')}else{state.saved.add(id);toast('Saved to your shortlist')}
   localStorage.setItem('vx-saved',JSON.stringify([...state.saved]));renderEvents();renderRegistrationEvents();
 }
+
+function togglePlan(id){
+  state.plan.has(id)?state.plan.delete(id):state.plan.add(id);
+  localStorage.setItem('vx-plan',JSON.stringify([...state.plan]));renderEvents();renderPlanner();toast(state.plan.has(id)?'Added to your festival plan':'Removed from your festival plan');
+}
+function plannedEvents(){return events.filter(event=>state.plan.has(event.id)).sort((a,b)=>a.start.localeCompare(b.start))}
+function planConflicts(items){
+  const conflicts=[];for(let i=0;i<items.length;i++)for(let j=i+1;j<items.length;j++)if(items[i].start<items[j].end&&items[j].start<items[i].end)conflicts.push(`${items[i].title} overlaps ${items[j].title}`);return conflicts;
+}
+function renderPlanner(){
+  const items=plannedEvents(),conflicts=planConflicts(items),list=$('#planner-list'),notice=$('#planner-conflicts');
+  $('#plan-count').textContent=items.length;
+  list.innerHTML=items.length?items.map(event=>`<article><img src="${event.image}" alt=""><div><small>${event.slot} · ${event.venue}</small><strong>${event.title}</strong><span>${event.category} · ${event.duration}</span></div><button type="button" data-remove-plan="${event.id}" aria-label="Remove ${event.title} from plan">×</button></article>`).join(''):`<div class="planner-empty"><strong>Your plan is empty.</strong><p>Add events from the challenge cards to build your itinerary.</p></div>`;
+  notice.hidden=!conflicts.length;notice.innerHTML=conflicts.length?`<strong>Timing check</strong>${conflicts.map(item=>`<span>${item}</span>`).join('')}`:'';
+  $('#download-calendar').disabled=!items.length;$('#clear-plan').disabled=!items.length;
+}
+function openPlanner(){renderPlanner();$('#planner-modal').classList.add('open');$('#planner-modal').setAttribute('aria-hidden','false');lockPage(true)}
+function closePlanner(){const modal=$('#planner-modal');modal.classList.remove('open');modal.setAttribute('aria-hidden','true');lockPage(false)}
+function downloadCalendar(){
+  const items=plannedEvents();if(!items.length)return;const stamp=new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');
+  const body=items.map(event=>['BEGIN:VEVENT',`UID:${event.id}@vertechx-preview`,`DTSTAMP:${stamp}`,`DTSTART;TZID=Asia/Kolkata:${event.start}`,`DTEND;TZID=Asia/Kolkata:${event.end}`,`SUMMARY:${event.title}`,`LOCATION:${event.venue}, MVJCE`,`DESCRIPTION:VertechX concept timetable — verify the official event schedule.\\n${event.summary}`,'END:VEVENT'].join('\r\n')).join('\r\n');
+  const calendar=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//VertechX NEXT//Festival Planner//EN','CALSCALE:GREGORIAN','X-WR-CALNAME:VertechX Concept Plan',body,'END:VCALENDAR'].join('\r\n');downloadBlob(new Blob([calendar],{type:'text/calendar;charset=utf-8'}),'vertechx-my-plan.ics');
+}
+function downloadBlob(blob,name){const link=document.createElement('a');link.href=URL.createObjectURL(blob);link.download=name;link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1000)}
 
 function openEvent(id){
   const event=events.find(item=>item.id===id);if(!event)return;
@@ -94,23 +119,28 @@ function renderReview(){
   $('#review-total').textContent=money(total);
 }
 function openRegistration(preselect){
-  if(preselect)state.selected.add(preselect);else if(!state.selected.size&&state.saved.size)state.saved.forEach(id=>state.selected.add(id));
+  if(preselect)state.selected.add(preselect);else if(!state.selected.size&&state.plan.size)state.plan.forEach(id=>state.selected.add(id));else if(!state.selected.size&&state.saved.size)state.saved.forEach(id=>state.selected.add(id));
   state.step=1;renderRegistrationEvents();syncStep();$('#success-state').classList.remove('active');$('.stepper').hidden=false;$('.form-actions').hidden=false;$$('.form-step').forEach(el=>el.hidden=false);
   const modal=$('#registration-modal');modal.classList.add('open');modal.setAttribute('aria-hidden','false');lockPage(true);setTimeout(()=>$('#registration-form input')?.focus(),50);
 }
 function closeRegistration(){const modal=$('#registration-modal');modal.classList.remove('open');modal.setAttribute('aria-hidden','true');lockPage(false)}
 function completeDemo(){
-  const form=$('#registration-form');localStorage.setItem('vx-demo-registration',JSON.stringify({name:form.elements.name.value,events:[...state.selected],createdAt:new Date().toISOString(),payment:'sandbox'}));
+  const form=$('#registration-form'),registrationId=`VX-${Date.now().toString(36).toUpperCase()}`;state.selected.forEach(id=>state.plan.add(id));localStorage.setItem('vx-plan',JSON.stringify([...state.plan]));localStorage.setItem('vx-demo-registration',JSON.stringify({id:registrationId,name:form.elements.name.value,events:[...state.selected],createdAt:new Date().toISOString(),payment:'preview'}));
   $$('.form-step').forEach(el=>el.hidden=true);$('.stepper').hidden=true;$('.form-actions').hidden=true;$('#success-state').classList.add('active');
+  $('#ticket-name').textContent=form.elements.name.value.toUpperCase();$('#ticket-id').textContent=registrationId;const qr=$('#ticket-qr');qr.innerHTML='';if(window.QRCode)new QRCode(qr,{text:`VERTECHX:${registrationId}:${[...state.selected].join(',')}`,width:112,height:112,colorDark:'#050810',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});renderEvents();
 }
 
-renderFilters();renderEvents();renderSchedule();renderRegistrationEvents();
+function downloadPass(){
+  const qrSource=$('#ticket-qr canvas, #ticket-qr img');if(!qrSource)return toast('QR pass is still preparing');const canvas=document.createElement('canvas');canvas.width=760;canvas.height=440;const ctx=canvas.getContext('2d');ctx.fillStyle='#050810';ctx.fillRect(0,0,760,440);ctx.fillStyle='#54e6ff';ctx.font='700 24px Arial';ctx.fillText('VERTECHX // NEXT',46,62);ctx.fillStyle='#ffffff';ctx.font='700 44px Arial';ctx.fillText($('#ticket-name').textContent.slice(0,24),46,145);ctx.fillStyle='#9aa6bd';ctx.font='20px monospace';ctx.fillText($('#ticket-id').textContent,46,188);ctx.fillText('MVJCE · REGISTRATION PREVIEW',46,350);ctx.drawImage(qrSource,560,86,150,150);ctx.fillStyle='#9aa6bd';ctx.font='14px Arial';ctx.fillText('No payment collected',560,265);canvas.toBlob(blob=>downloadBlob(blob,`${$('#ticket-id').textContent}.png`),'image/png');
+}
+
+renderFilters();renderEvents();renderSchedule();renderRegistrationEvents();renderPlanner();
 
 $('#event-filters').addEventListener('click',event=>{const button=event.target.closest('[data-filter]');if(!button)return;state.filter=button.dataset.filter;state.showSaved=false;renderFilters();renderEvents()});
 $('#event-search').addEventListener('input',event=>{state.query=event.target.value;renderEvents()});
 $('#saved-button').addEventListener('click',()=>{state.showSaved=!state.showSaved;renderEvents()});
 $('#clear-filters').addEventListener('click',()=>{state.filter='All';state.query='';state.showSaved=false;$('#event-search').value='';renderFilters();renderEvents()});
-$('#event-grid').addEventListener('click',event=>{const save=event.target.closest('[data-save]');if(save)toggleSave(save.dataset.save)});
+$('#event-grid').addEventListener('click',event=>{const save=event.target.closest('[data-save]'),plan=event.target.closest('[data-plan]');if(save)toggleSave(save.dataset.save);if(plan)togglePlan(plan.dataset.plan)});
 $('#event-modal').addEventListener('click',event=>{if(event.target.closest('[data-close-modal]'))closeEvent();const register=event.target.closest('[data-register]');if(register){closeEvent();openRegistration(register.dataset.register)}});
 
 $$('.day-tabs button').forEach(button=>button.addEventListener('click',()=>{$$('.day-tabs button').forEach(item=>{item.classList.toggle('active',item===button);item.setAttribute('aria-selected',item===button)});renderSchedule(button.dataset.day)}));
@@ -123,6 +153,11 @@ $('#next-step').addEventListener('click',()=>{
   if(state.step===3)return completeDemo();state.step+=1;syncStep();
 });
 $('#back-step').addEventListener('click',()=>{if(state.step>1){state.step-=1;syncStep()}});
+$('#plan-button').addEventListener('click',openPlanner);
+$('#planner-modal').addEventListener('click',event=>{if(event.target.closest('[data-close-planner]'))closePlanner();const remove=event.target.closest('[data-remove-plan]');if(remove)togglePlan(remove.dataset.removePlan)});
+$('#clear-plan').addEventListener('click',()=>{state.plan.clear();localStorage.setItem('vx-plan','[]');renderEvents();renderPlanner()});
+$('#download-calendar').addEventListener('click',downloadCalendar);
+$('#download-pass').addEventListener('click',downloadPass);
 
 const menuButton=$('#menu-button'),mobileNav=$('#mobile-nav');
 menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')!=='true';menuButton.setAttribute('aria-expanded',open);mobileNav.classList.toggle('open',open);mobileNav.setAttribute('aria-hidden',!open)});
@@ -132,7 +167,7 @@ $('#theme-toggle').addEventListener('click',()=>{document.body.classList.toggle(
 if(localStorage.getItem('vx-theme')==='light')document.body.classList.add('light');
 
 document.addEventListener('keydown',event=>{
-  if(event.key==='Escape'){if($('#event-modal').classList.contains('open'))closeEvent();if($('#registration-modal').classList.contains('open'))closeRegistration()}
+  if(event.key==='Escape'){if($('#event-modal').classList.contains('open'))closeEvent();if($('#registration-modal').classList.contains('open'))closeRegistration();if($('#planner-modal').classList.contains('open'))closePlanner()}
   if(event.key==='/'&&!['INPUT','TEXTAREA'].includes(document.activeElement.tagName)){event.preventDefault();$('#event-search').focus()}
 });
 

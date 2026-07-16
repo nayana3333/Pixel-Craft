@@ -15,7 +15,7 @@
   <meta name="twitter:image" content="images/hero-vertechx.png">
   <title>VertechX // NEXT — MVJCE Technical Fest</title>
   <link rel="preload" href="images/hero-vertechx.png" as="image">
-  <link rel="stylesheet" href="style.css?v=20260716a">
+  <link rel="stylesheet" href="style.css?v=20260716b">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -36,6 +36,7 @@
       <a href="#faq">FAQ</a>
     </nav>
     <div class="header-actions">
+      <button class="plan-button" id="plan-button" type="button" aria-label="Open my festival plan">My plan <b id="plan-count">0</b></button>
       <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch color theme">◐</button>
       <button class="button button-small open-registration" type="button">Register <span>↗</span></button>
       <button class="menu-button" id="menu-button" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
@@ -200,13 +201,19 @@
           <div class="review-layout"><div id="review-details"></div><aside><span>ENTRY TOTAL</span><strong id="review-total">₹0</strong><small>Preview only · no payment collected</small></aside></div>
           <div class="sandbox-note"><b>REGISTRATION PREVIEW</b><p>This concept checkout confirms your selection without collecting payment.</p></div>
         </section>
-        <section class="success-state" id="success-state" aria-live="polite"><div class="success-ring">✓</div><p class="kicker">Registration confirmed</p><h3>You are all set.</h3><p>Your preview confirmation has been saved on this device. No payment was collected.</p><button class="button button-primary" data-close-registration type="button">Return to site</button></section>
+        <section class="success-state" id="success-state" aria-live="polite"><div class="success-ring">✓</div><p class="kicker">Registration confirmed</p><h3>You are all set.</h3><p>Your preview confirmation has been saved on this device. No payment was collected.</p><div class="ticket-pass" id="ticket-pass"><div><span>VERTECHX // NEXT</span><strong id="ticket-name">PARTICIPANT</strong><small id="ticket-id">VX-PREVIEW</small></div><div id="ticket-qr" aria-label="Registration QR code"></div></div><div class="success-actions"><button class="button button-primary" id="download-pass" type="button">Download pass</button><button class="button" data-close-registration type="button">Return to site</button></div></section>
         <footer class="form-actions"><button class="back-step" id="back-step" type="button" hidden>← Back</button><span id="form-hint">Step 1 of 3</span><button class="button button-primary" id="next-step" type="button">Continue <span>→</span></button></footer>
       </form>
     </div>
   </div>
 
+  <div class="modal planner-modal" id="planner-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="planner-title">
+    <div class="modal-backdrop" data-close-planner></div>
+    <div class="planner-card"><button class="modal-close" data-close-planner type="button" aria-label="Close festival planner">×</button><div class="planner-heading"><small>PERSONAL FESTIVAL PLANNER</small><h2 id="planner-title">My schedule.</h2><p>Build a device-local itinerary and spot timing conflicts before festival day.</p></div><div id="planner-conflicts" class="planner-conflicts" hidden></div><div id="planner-list" class="planner-list"></div><div class="planner-actions"><button class="button" id="clear-plan" type="button">Clear plan</button><button class="button button-primary" id="download-calendar" type="button">Add to calendar <span>↓</span></button></div></div>
+  </div>
+
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="script.js?v=20260716a"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js?v=20260716b"></script>
 </body>
 </html>

@@ -14,6 +14,10 @@ An independent, frontend-focused redesign concept for the VertechX technical fes
 - Dark and light themes stored on the visitor's device
 - Keyboard shortcuts, reduced-motion support and semantic landmarks
 - Scroll progress, active navigation states and reveal animations
+- Shareable event-detail pages with full mission rules and venue information
+- Device-local festival planner with automatic schedule-conflict warnings
+- Downloadable `.ics` calendar itinerary for selected events
+- QR-coded registration preview pass with downloadable PNG output
 - Optimized WebP event artwork with descriptive alternative text
 - Open Graph and X sharing metadata
 
