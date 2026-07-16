@@ -29,7 +29,7 @@ body.light{--bg:#f2f5fa;--bg-soft:#e9eef7;--panel:#fff;--panel-2:#e8eef8;--text:
 :root{--bg:#03050a;--bg-soft:#080b11;--panel:#080c14;--panel-2:#0c111b}
 .concept-bar{display:none}
 .hero{padding-top:120px;background:transparent}
-.hero-art{display:none}
+.hero-art{display:none;background-image:url('images/hero-optimized.jpg')}
 .ticker{background:rgba(3,5,10,.84);backdrop-filter:blur(10px)}
 .section{background:rgba(3,5,10,.72);backdrop-filter:blur(5px)}
 .events-section,.gallery-section{background:rgba(3,5,10,.8)}

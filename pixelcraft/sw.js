@@ -1,4 +1,4 @@
-const CACHE='vertechx-next-v4';
+const CACHE='vertechx-next-v5';
 const CORE=['./','./index.html','./event.html','./offline.html','./style.css?v=20260716c','./script.js?v=20260716c','./event-page.js?v=20260716c','./manifest.webmanifest','./vendor/qrcode.min.js','./images/hero-optimized.jpg','./icons/icon-192.png','./icons/icon-512.png'];
 const EVENT_IMAGES=['hackathon','robotics','ideathon','cyber','design','gaming','drone','data'].map(name=>`./images/events/${name}.webp`);
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll([...CORE,...EVENT_IMAGES])).then(()=>self.skipWaiting())));

@@ -31,6 +31,24 @@ Serve the `pixelcraft` directory with a static server, then open `index.html`.
 python -m http.server 8000 --directory pixelcraft
 ```
 
+## Repository structure
+
+```text
+pixelcraft/
+  index.html          Main festival experience
+  event.html          Shareable event-detail page
+  script.js           Discovery, planner and registration interactions
+  event-page.js       Event-detail rendering
+  style.css           Responsive visual system
+  manifest.webmanifest
+  sw.js               Offline and PWA caching
+  images/             Optimized runtime artwork
+  icons/              Installable app icons
+  vendor/             QRCode.js and its license
+firebase.json         Firebase Hosting configuration
+PORTFOLIO.md           Case study and interview walkthrough
+```
+
 ## Deploy on Firebase Hosting
 
 The repository includes `firebase.json` for static hosting. Connect it to a Firebase project and deploy the `pixelcraft` directory after confirming the final festival content and ownership.
@@ -48,3 +66,7 @@ See `PORTFOLIO.md` for the complete case-study narrative, interview walkthrough 
 ## Visual assets
 
 The cinematic hero and eight event-specific images were created for this project with OpenAI's built-in image generation workflow, then exported to optimized WebP for the live interface.
+
+## Third-party software
+
+QR generation uses QRCode.js by davidshimjs under the MIT License. The vendored license is included beside the library in `pixelcraft/vendor/`.

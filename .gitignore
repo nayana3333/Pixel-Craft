@@ -1,6 +1,11 @@
 .firebase/
 firebase-debug.log
+*.log
 node_modules/
+coverage/
+lighthouse-report*/
+.idea/
+.vscode/
 .env
 .env.*
 !.env.example
